@@ -1,6 +1,7 @@
 package info.ppservers.devtool;
 
 import info.ppservers.devtool.lib.Reference;
+import info.ppservers.devtool.moditems.ModItems;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -16,7 +17,8 @@ public class Devtool {
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent pre){
 		
-		
+		ModItems.addItems();
+		ModItems.RegisterItems();
 	}
 	
 	
